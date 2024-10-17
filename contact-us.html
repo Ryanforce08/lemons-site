@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>About FIRST</title>
+	<style>
+		body {
+      font-family: 'Montserrat', sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      text-align: center;
+    }
+    .header h1 {
+      font-size: 3em;
+      margin: 0;
+    }
+    .header h2 {
+      font-size: 2em;
+      margin: 0;
+    }
+    .content {
+      padding: 20px;
+    }
+    .content h2 {
+      font-size: 2em;
+      margin-bottom: 10px;
+    }
+    .content p {
+      font-size: 1.2em;
+    }
+    .footer {
+      text-align: right;
+      padding: 10px;
+      background: #f1f1f1;
+    }
+    .nav {
+      background: #000000;
+      overflow: hidden;
+      display: flex;
+      color: #fff;
+    }
+    .nav a{
+      padding: 20px;
+      color: #fff;
+    }
+	.nav h1 {
+		align-items: end;
+		margin-left: 500px;
+	}
+	</style>
+</head>
+<body>
+	<div class="nav">
+		<a href="/">Home</a>
+		<a href="/about-us.html">About Us</a>
+		<a href="/about-first.html" class="active">About FIRST</a>
+		<a href="/outreach.html">Outreach</a>
+		<a href="/connect.html">Connect</a>
+		<a href="/contact-us.html">Contact Us</a>
+		<a href="/upcoming.html">Upcoming</a>
+		<a href="/this-season.html">This Season</a>
+		<h1>COMBUSTIBLE LEMONS</h1>
+	</div>
+	<div class="container">
+		<div class="content">
+			<h2>Contact Us!</h2>
+				<form action="/submit-form" method="POST">
+					<label for="first-name">First Name <span class="form-required">*</span></label>
+					<input type="text" id="first-name" name="first-name" required>
+
+					<label for="last-name">Last Name <span class="form-required">*</span></label>
+					<input type="text" id="last-name" name="last-name" required>
+
+					<label for="email">Email <span class="form-required">*</span></label>
+					<input type="email" id="email" name="email" required>
+
+					<label for="comment">Comment <span class="form-required">*</span></label>
+					<textarea id="comment" name="comment" rows="5" required></textarea>
+
+					<button type="submit" class="submit-btn">Submit</button>
+				</form>
+		</div>
+	</div>
+	<div class="footer">
+		<p>&copy; 2023 COMBUSTIBLE LEMONS</p>
+	</div>
+</body>
+</html>
